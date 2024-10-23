@@ -17,6 +17,9 @@ export const WaitListForm = () => {
 
     const handleWaitListSubmit = (formData) => {
         console.log(formData)
+
+        //TODO: Llamar server action
+
     }
 
     return (
