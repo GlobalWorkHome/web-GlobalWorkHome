@@ -2,10 +2,13 @@
 import { Controller, useForm } from "react-hook-form"
 import { InputFloatingLabel } from "./ui/InputFloatingLabel"
 import { isValidEmail } from "@/utils/validators"
+import { subscribeToTheWaitinglist } from "@/actions/waitlist"
+import { useState } from "react"
 
 
 export const WaitListForm = () => {
 
+    const [isLoading, setIsLoading] = useState(false)
     const { register, control, handleSubmit, formState: { errors } } = useForm({
         defaultValues: {
             name: '',
@@ -15,11 +18,15 @@ export const WaitListForm = () => {
     })
 
 
-    const handleWaitListSubmit = (formData) => {
-        console.log(formData)
-
-        //TODO: Llamar server action
-
+    const handleWaitListSubmit = async(formData) => {
+        setIsLoading(true)
+        try {
+            await subscribeToTheWaitinglist( formData )
+        } catch (error) {
+            console.log(error.message)
+        }finally {
+            setIsLoading(false)
+        }
     }
 
     return (
@@ -72,14 +79,14 @@ export const WaitListForm = () => {
                 </div>
                 <div className="sm:col-span-2">
                     <select
-                        className="w-full py-3 md:py-4 text-gray-500 font-semibold rounded-md"
+                        className="w-full py-3 md:py-4 text-gray-500 font-semibold rounded-md px-4"
                         {...register('role', {
                             validate: value => value.trim() === '' ? 'Please, select an option' : undefined
                         })}
                     >
                         <option value="">¿Do you are an employee or company?</option>
-                        <option value="EMPLOYEE">EMPLOYEE</option>
-                        <option value="COMPANY">COMPANY</option>
+                        <option value="employee">Employee</option>
+                        <option value="company">Company</option>
                     </select>
                 </div>
                 {errors.role && (
@@ -87,7 +94,7 @@ export const WaitListForm = () => {
                 )}
             </div>
             <button className="uppercase bg-yellow-600 hover:bg-yellow-500 text-white font-bold w-full text-lg rounded-md py-3 mt-4 sm:mt-2">
-                join
+                {isLoading ? 'Registering...' : 'join now'}
             </button>
         </form>
     )

@@ -24,6 +24,6 @@ model Waitlist {
 }
 
 enum UserRole {
-  EMPLOYEE
-  COMPANY
+  employee
+  company
 }
