@@ -27,8 +27,8 @@ export const subscribeToTheWaitinglist = async({ name, email, role }) => {
             }
         })
 
-        // TODO: Enviar correo
-           await sendWaitlistEmail({ name, email, role })
+        // Enviar correo
+        await sendWaitlistEmail({ name, email, role })
 
         return registeredUser
 

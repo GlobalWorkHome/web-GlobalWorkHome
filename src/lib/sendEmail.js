@@ -8,8 +8,7 @@ export const sendWaitlistEmail = async({ name, email, role }) => {
     
     const { data, error } = await resend.emails.send({
         from: 'Global Work Home <onboarding@resend.dev>',
-        // to: [ email ],
-        to: 'globalworkhomes@gmail.com',
+        to: [ email ],
         subject: 'Welcome to the Global Home Work Waitlist!',
         html: `
         <div style="font-family: Arial, sans-serif; color: #333; line-height: 1.6;">
