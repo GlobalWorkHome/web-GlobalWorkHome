@@ -93,7 +93,10 @@ export const WaitListForm = () => {
                     <span className="text-sm text-red-500">{errors.role.message}</span>
                 )}
             </div>
-            <button className="uppercase bg-yellow-600 hover:bg-yellow-500 text-white font-bold w-full text-lg rounded-md py-3 mt-4 sm:mt-2">
+            <button 
+                disabled={isLoading}
+                className="uppercase bg-yellow-600 hover:bg-yellow-500 transition disabled:hover:bg-yellow-600 disabled:opacity-50 text-white font-bold w-full text-lg rounded-md py-3 mt-4 sm:mt-2"
+            >
                 {isLoading ? 'Registering...' : 'join now'}
             </button>
         </form>
