@@ -1,3 +1,4 @@
+import PreSubscriptionBenefits from '@/components/PreSubscriptionBenefits'
 import { WaitListForm } from "@/components/WaitListForm";
 import Image from "next/image";
 
@@ -25,13 +26,10 @@ export default function Home() {
                     </div>
                 </div>
                 </div>
-                
-            </header>        
-            {/* <main>
-                <section className="bg-black">
-            
-                </section>
-            </main> */}
+            </header>     
+            <section>
+                <PreSubscriptionBenefits />
+            </section>   
         </>
     );
 }
