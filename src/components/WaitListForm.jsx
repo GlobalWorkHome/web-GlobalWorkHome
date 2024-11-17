@@ -9,7 +9,7 @@ import { useState } from "react"
 export const WaitListForm = () => {
 
     const [isLoading, setIsLoading] = useState(false)
-    const { register, control, handleSubmit, formState: { errors } } = useForm({
+    const { register, control, handleSubmit, formState: { errors }, reset } = useForm({
         defaultValues: {
             name: '',
             email: '',
@@ -19,14 +19,19 @@ export const WaitListForm = () => {
 
 
     const handleWaitListSubmit = async(formData) => {
+
         setIsLoading(true)
-        try {
-            await subscribeToTheWaitinglist( formData )
-        } catch (error) {
-            console.log(error.message)
-        }finally {
-            setIsLoading(false)
+        const { user, erorr } = await subscribeToTheWaitinglist( formData )
+        setIsLoading(false)
+
+        if( erorr ){
+            return console.log(erorr)
         }
+
+        reset()
+        // console.log(user)
+
+
     }
 
     return (

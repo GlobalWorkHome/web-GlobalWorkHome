@@ -30,9 +30,16 @@ export const subscribeToTheWaitinglist = async({ name, email, role }) => {
         // Enviar correo
         await sendWaitlistEmail({ name, email, role })
 
-        return registeredUser
+        return {
+            erorr: null,
+            user: registeredUser
+        }
 
     } catch (error) {
-        throw new Error(error)
+        console.log(error)
+        return {
+            erorr: error.message,
+            user: null
+        }
     }
 }

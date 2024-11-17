@@ -7,7 +7,8 @@ export const sendWaitlistEmail = async({ name, email, role }) => {
     const resend = new Resend(process.env.RESEND_API_KEY);
     
     const { data, error } = await resend.emails.send({
-        from: 'Global Work Home <onboarding@resend.dev>',
+        // from: 'Global Work Home <onboarding@resend.dev>',
+        from: `Global Work Home <noreply@${process.env.RESEND_DOMAIN}>`,
         to: [ email ],
         subject: 'Welcome to the Global Home Work Waitlist!',
         html: `
