@@ -21,7 +21,7 @@ model Waitlist {
   role             UserRole
   isSubscribed     Boolean  @default(true)
   dateUnsubscribed DateTime? 
-  status           Boolean
+  status           Boolean  @default(true)
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
 }
