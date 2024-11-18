@@ -19,7 +19,7 @@ model Waitlist {
   name             String
   email            String   @unique
   role             UserRole
-  isSubscribed     Boolean
+  isSubscribed     Boolean  @default(true)
   dateUnsubscribed DateTime? 
   status           Boolean
   createdAt        DateTime @default(now())
