@@ -1,6 +1,6 @@
 'use server'
-import prisma from "@/lib/prisma"
-import { sendWaitlistEmail } from "@/lib/sendEmail"
+import prisma from "@/modules/core/lib/prisma"
+import { sendWaitlistEmail } from "@/modules/waitlist/lib/sendEmail"
 
 
 export const subscribeToTheWaitinglist = async({ name, email, role }) => {
