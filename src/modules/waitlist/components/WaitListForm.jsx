@@ -1,9 +1,10 @@
 'use client'
 import { Controller, useForm } from "react-hook-form"
 import { InputFloatingLabel } from "./ui/InputFloatingLabel"
-import { isValidEmail } from "@/utils/validators"
-import { subscribeToTheWaitinglist } from "@/actions/waitlist"
+import { isValidEmail } from "@/modules/core/utils/validators"
+import { subscribeToTheWaitinglist } from "@/modules/waitlist/actions/waitlist"
 import { useState } from "react"
+import { USER_ROLES_SELECT } from "@/modules/users/constants/roles"
 
 
 export const WaitListForm = () => {
@@ -30,8 +31,6 @@ export const WaitListForm = () => {
 
         reset()
         // console.log(user)
-
-
     }
 
     return (
@@ -90,8 +89,11 @@ export const WaitListForm = () => {
                         })}
                     >
                         <option value="">¿Do you are an employee or company?</option>
-                        <option value="employee">Employee</option>
-                        <option value="company">Company</option>
+                        {
+                            USER_ROLES_SELECT.map(role => (
+                                <option key={role.key} value={ role.key }>{ role.value }</option>
+                            ))
+                        }
                     </select>
                 </div>
                 {errors.role && (
@@ -102,7 +104,7 @@ export const WaitListForm = () => {
                 disabled={isLoading}
                 className="uppercase bg-yellow-600 hover:bg-yellow-500 transition disabled:hover:bg-yellow-600 disabled:opacity-50 text-white font-bold w-full text-lg rounded-md py-3 mt-4 sm:mt-2"
             >
-                {isLoading ? 'Registering...' : 'join now'}
+                {isLoading ? 'Subscribing...' : 'Subscribe now'}
             </button>
         </form>
     )
