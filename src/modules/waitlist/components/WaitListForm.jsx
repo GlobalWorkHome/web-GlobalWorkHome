@@ -5,10 +5,10 @@ import { isValidEmail } from "@/modules/core/utils/validators"
 import { subscribeToTheWaitinglist } from "@/modules/waitlist/actions/waitlist"
 import { useState } from "react"
 import { USER_ROLES_SELECT } from "@/modules/users/constants/roles"
-
+import { useTranslations } from 'next-intl'
 
 export const WaitListForm = () => {
-
+    const t = useTranslations('WaitlistPage.WaitListForm')
     const [isLoading, setIsLoading] = useState(false)
     const { register, control, handleSubmit, formState: { errors }, reset } = useForm({
         defaultValues: {
@@ -18,19 +18,16 @@ export const WaitListForm = () => {
         }
     })
 
-
-    const handleWaitListSubmit = async(formData) => {
-
+    const handleWaitListSubmit = async (formData) => {
         setIsLoading(true)
-        const { user, erorr } = await subscribeToTheWaitinglist( formData )
+        const { user, error } = await subscribeToTheWaitinglist(formData)
         setIsLoading(false)
 
-        if( erorr ){
-            return console.log(erorr)
+        if (error) {
+            return console.log(error)
         }
 
         reset()
-        // console.log(user)
     }
 
     return (
@@ -45,19 +42,20 @@ export const WaitListForm = () => {
                         name="name"
                         render={({ field }) => (
                             <InputFloatingLabel
-                                label="Name"
+                                label={t('name.label')}
                                 type="text"
                                 value={field.value}
                                 onChange={field.onChange}
+                                placeholder={t('name.placeholder')}
                             />
                         )}
                         rules={{
-                            required: 'Enter your name',
-                            validate: value => value.trim() === 'Enter your name' ? '' : undefined
+                            required: t('name.error'),
+                            validate: value => value.trim() === '' ? t('name.error') : undefined
                         }}
                     />
                     {errors.name && (
-                        <span className="text-sm text-red-500">{errors.name.message}</span>
+                        <span className="text-sm text-red-500">{t('name.error')}</span>
                     )}
                 </div>
                 <div>
@@ -66,48 +64,53 @@ export const WaitListForm = () => {
                         name="email"
                         render={({ field }) => (
                             <InputFloatingLabel
-                                label="Email"
+                                label={t('email.label')}
                                 type="text"
                                 value={field.value}
                                 onChange={field.onChange}
+                                placeholder={t('email.placeholder')}
                             />
                         )}
                         rules={{
-                            required: 'Enter your email',
-                            validate: value => !isValidEmail(value) ? 'The email is not valid' : undefined
+                            required: t('email.error'),
+                            validate: value => !isValidEmail(value) ? t('email.invalidError') : undefined
                         }}
                     />
                     {errors.email && (
-                        <span className="text-sm text-red-500">{errors.email.message}</span>
+                        <span className="text-sm text-red-500">{t(errors.email.type === 'required' ? 'email.error' : 'email.invalidError')}</span>
                     )}
                 </div>
                 <div className="sm:col-span-2">
                     <select
                         className="w-full py-3 md:py-4 text-gray-500 font-semibold rounded-md px-4"
                         {...register('role', {
-                            validate: value => value.trim() === '' ? 'Please, select an option' : undefined
+                            validate: value => value.trim() === '' ? t('role.error') : undefined
                         })}
                     >
-                        <option value="">¿Do you are an employee or company?</option>
+                        <option value="">{t('role.placeholder')}</option>
                         {
                             USER_ROLES_SELECT.map(role => (
-                                <option key={role.key} value={ role.key }>{ role.value }</option>
+                                <option key={role.key} value={role.key}>
+                                    {t(`userRolSelect.${role.key}`)}
+                                </option>
                             ))
                         }
+
                     </select>
+                    {errors.role && (
+                        <span className="text-sm text-red-500">{t('role.error')}</span>
+                    )}
                 </div>
-                {errors.role && (
-                    <span className="text-sm text-red-500">{errors.role.message}</span>
-                )}
             </div>
-            <button 
+            <button
                 disabled={isLoading}
                 className="uppercase bg-yellow-600 hover:bg-yellow-500 transition disabled:hover:bg-yellow-600 disabled:opacity-50 text-white font-bold w-full text-lg rounded-md py-3 mt-4 sm:mt-2"
             >
-                {isLoading ? 'Subscribing...' : 'Subscribe now'}
+               <span className='inline-block animate-jump'>
+               {isLoading ? t('submit.loading') : t('submit.label')}
+               </span>
             </button>
+            <p className="text-white text-sm mt-2">{t('termsAndConditions.text')}</p>
         </form>
     )
 }
-
-

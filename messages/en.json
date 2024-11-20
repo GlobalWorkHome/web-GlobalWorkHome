@@ -1,0 +1,71 @@
+{
+    "WaitlistPage": {
+      "title": "Find Remote jobs",
+      "subtitle": "Subscribe to enter the waitlist",
+      "WaitListForm": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter your name",
+          "error": "Enter your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email",
+          "error": "Enter your email",
+          "invalidError": "The email is not valid"
+        },
+        "userRolSelect": {
+                "employee": "Professional",
+                "company": "Company"
+            },
+        "role": {
+          "label": "Are you an employee or company?",
+          "placeholder": "Select an option",
+          "error": "Please, select an option"
+        },
+        "submit": {
+          "label": "Subscribe now",
+          "loading": "Subscribing..."
+        },
+        "termsAndConditions": {
+          "text": "By clicking subscribe you agree to our Terms & Conditions"
+        }
+      }
+    },
+    "PreSubscriptionBenefits": {
+      "title": "Pre-subscription Benefits",
+      "subtitle": "Join our waitlist and get a 50% discount on all our plans",
+      "bestValue": "Best value",
+      "discount": "50% discount",
+      "applied": "applied",
+      "callToAction": "Don't miss this opportunity! Register now and secure your discount.",
+      "plans": {
+        "2_ads": {
+          "name": "2 ads",
+          "feature1": "Publication of 2 job offers",
+          "feature2": "Visibility for 30 days",
+          "feature3": "Email support"
+        },
+        "10_ads": {
+          "name": "10 ads",
+          "feature1": "Publication of 10 job offers",
+          "feature2": "Visibility for 60 days",
+          "feature3": "Priority support"
+        },
+        "monthly_unlimited": {
+          "name": "Monthly unlimited",
+          "feature1": "Unlimited publications",
+          "feature2": "Permanent visibility",
+          "feature3": "24/7 support",
+          "feature4": "Featured in searches"
+        },
+        "annual_unlimited": {
+          "name": "Annual unlimited",
+          "feature1": "Everything in the monthly plan",
+          "feature2": "15 months for the price of 12",
+          "feature3": "Access to advanced statistics",
+          "feature4": "Featured company profile"
+        }
+      }
+    }
+  }
