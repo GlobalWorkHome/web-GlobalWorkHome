@@ -19,8 +19,8 @@
                 "company": "Empresa"
             },
             "role": {
-                "label": "¿Eres empleado o empresa?",
-                "placeholder": "Selecciona una opción",
+                "label": "¿Eres un profesional o una empresa?",
+                "placeholder": "¿Eres un profesional o una empresa?",
                 "error": "Por favor, selecciona una opción"
             },
             "submit": {
