@@ -28,10 +28,9 @@ export const Waitlist = () => {
                                     className="w-full h-full"
                                 />
                             </figure>
-                            <h1 className="text-white text-4xl font-bold md:text-6xl lg:text-8xl mb-3">{ t('title') }</h1>
-                            <p className="text-white text-xl md:text-2xl font-semibold">{ t('subtitle') }</p>
+                            <h1 className="text-white text-4xl font-bold md:text-6xl lg:text-8xl mb-3 animate-fade-right">{ t('title') }</h1>
+                            <p className="text-white text-xl md:text-2xl font-semibold animate-fade-right">{ t('subtitle') }</p>
                             <WaitListForm />
-                            <p className="text-white text-sm">By clicking subscribe you agree to our Terms & Conditions</p>
                         </div>
                     </div>
                 </div>

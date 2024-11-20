@@ -1,6 +1,71 @@
 {
     "WaitlistPage": {
         "title": "Encuentra trabajos remotos",
-        "subtitle": "Suscríbete para entrar en la lista de espera"
+        "subtitle": "Suscríbete para entrar en la lista de espera",
+        "WaitListForm": {
+            "name": {
+                "label": "Nombre",
+                "placeholder": "Ingresa tu nombre",
+                "error": "Ingresa tu nombre"
+            },
+            "email": {
+                "label": "Correo electrónico",
+                "placeholder": "Ingresa tu correo electrónico",
+                "error": "Ingresa tu correo electrónico",
+                "invalidError": "El correo electrónico no es válido"
+            },
+            "userRolSelect": {
+                "employee": "Profesional",
+                "company": "Empresa"
+            },
+            "role": {
+                "label": "¿Eres empleado o empresa?",
+                "placeholder": "Selecciona una opción",
+                "error": "Por favor, selecciona una opción"
+            },
+            "submit": {
+                "label": "Suscribirse ahora",
+                "loading": "Suscribiendo..."
+            },
+            "termsAndConditions": {
+                "text": "Al hacer clic en suscribirse, aceptas nuestros Términos y Condiciones"
+            }
+        }
+    },
+    "PreSubscriptionBenefits": {
+        "title": "Beneficios de Preinscripción",
+        "subtitle": "Únete a nuestra lista de espera y obtén un 50% de descuento en todos nuestros planes",
+        "bestValue": "Mejor valor",
+        "discount": "50% de descuento",
+        "applied": "aplicado",
+        "callToAction": "¡No pierdas esta oportunidad! Regístrate ahora y asegura tu descuento.",
+        "plans": {
+            "2_ads": {
+                "name": "2 avisos",
+                "feature1": "Publicación de 2 ofertas de trabajo",
+                "feature2": "Visibilidad por 30 días",
+                "feature3": "Soporte por email"
+            },
+            "10_ads": {
+                "name": "10 avisos",
+                "feature1": "Publicación de 10 ofertas de trabajo",
+                "feature2": "Visibilidad por 60 días",
+                "feature3": "Soporte prioritario"
+            },
+            "monthly_unlimited": {
+                "name": "Mensual ilimitado",
+                "feature1": "Publicaciones ilimitadas",
+                "feature2": "Visibilidad permanente",
+                "feature3": "Soporte 24/7",
+                "feature4": "Destacados en búsquedas"
+            },
+            "annual_unlimited": {
+                "name": "Anual ilimitado",
+                "feature1": "Todo lo del plan mensual",
+                "feature2": "15 meses por el precio de 12",
+                "feature3": "Acceso a estadísticas avanzadas",
+                "feature4": "Perfil de empresa destacado"
+            }
+        }
     }
 }
