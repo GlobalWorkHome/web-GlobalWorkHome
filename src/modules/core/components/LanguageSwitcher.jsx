@@ -99,7 +99,7 @@ export const LanguageSwitcher = () => {
                                 key={code}
                                 value={code}
                                 onClick={() => handleSelectLanguege(code)}
-                                className="flex items-center gap-2 text-sm px-2 py-1 first-of-type:border-b pr-5 cursor-pointer hover:bg-gray-200 rounded"
+                                className="flex items-center gap-2 text-sm px-2 py-1 first-of-type:border-b pr-5 cursor-pointer hover:bg-gray-200 hover:text-black rounded font-semibold text-gray-700"
                             >
                                 <Image
                                     src={`/images/icons/${code}.svg`}
