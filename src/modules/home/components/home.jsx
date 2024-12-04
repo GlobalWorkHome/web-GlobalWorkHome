@@ -1,5 +1,0 @@
-<content>
-    <section>
-
-    </section>
-</content>
