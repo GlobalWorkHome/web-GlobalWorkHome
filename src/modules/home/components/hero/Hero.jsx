@@ -1,10 +1,10 @@
-import React from 'react'
-import { FaFileAlt, FaPhoneAlt, FaVideo } from 'react-icons/fa'
-import Image from "next/image"
-import { SearchBar } from "./SearchBar"
-import { InterviewCard } from "./InterviewCard"
+import React from 'react';
+import { FaFileAlt, FaPhoneAlt, FaVideo } from 'react-icons/fa';
+import Image from 'next/image';
+import { SearchBar } from './SearchBar';
+import { InterviewCard } from './InterviewCard';
 
-export default function Hero () {
+export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-[url('/images/hombre.webp')] min-h-[700px] before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-r before:from-black/80 before:to-black/40">
 
@@ -29,7 +29,6 @@ export default function Hero () {
             <SearchBar />
           </div>
 
-
           {/* Right Column */}
           <div className="relative">
             <div className="space-y-4 max-w-md">
@@ -37,16 +36,19 @@ export default function Hero () {
                 icon={FaFileAlt}
                 title="Resume"
                 description="Lorem ipsum dolor sit amet consectetur adipiscing elit"
+                color="#4CAF50" // Verde
               />
               <InterviewCard
                 icon={FaPhoneAlt}
                 title="Telephone Interview"
                 description="Lorem ipsum dolor sit amet consectetur adipiscing elit"
+                color="#2196F3" // Azul
               />
               <InterviewCard
                 icon={FaVideo}
                 title="Video call Interview"
                 description="Lorem ipsum dolor sit amet consectetur adipiscing elit"
+                color="#FF9800" // Naranja
               />
             </div>
             <div className="absolute -right-96 -bottom-14 hidden lg:block -z-10">
@@ -81,6 +83,5 @@ export default function Hero () {
         </svg>
       </div>
     </div>
-  )
+  );
 }
-

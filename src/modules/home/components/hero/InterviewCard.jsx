@@ -1,10 +1,14 @@
 import React from 'react';
 
-export function InterviewCard({ icon: Icon, title, description }) {
+export function InterviewCard({ icon: Icon, title, description, color = '#000' }) {
   return (
     <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
       <div className="flex items-start gap-4">
-        <div className="p-2  rounded-lg text-black">
+        {/* Fondo dinámico del ícono */}
+        <div
+          className="p-2 rounded-lg text-white"
+          style={{ backgroundColor: color }}
+        >
           <Icon className="w-6 h-6" />
         </div>
         <div className="flex-1">
@@ -13,5 +17,5 @@ export function InterviewCard({ icon: Icon, title, description }) {
         </div>
       </div>
     </div>
-  )
+  );
 }

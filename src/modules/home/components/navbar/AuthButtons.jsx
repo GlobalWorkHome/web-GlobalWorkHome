@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import { FaChevronDown } from 'react-icons/fa';
 
 export default function AuthButtons() {
@@ -22,17 +22,19 @@ export default function AuthButtons() {
       
       {/* Employer Button */}
       <button
-        className="px-4 py-2 text-white bg-[#FA4D04] rounded-md hover:bg-orange-600 focus:outline-none"
-      >
-        Employer
-      </button>
-      
-      {/* Worker Button */}
-      <button
-        className="px-4 py-2 text-white bg-red-500 rounded-md hover:bg-red-600 focus:outline-none"
-      >
-        Worker
-      </button>
+  className="px-4 py-2 text-white bg-yellow-600 rounded-md focus:outline-none hover:bg-yellow-500"
+>
+  Employer
+</button>
+
+{/* Worker Button */}
+<button
+  className="px-4 py-2 text-white bg-gray-800 rounded-md focus:outline-none hover:bg-gray-700"
+>
+  Worker
+</button>
+
+
     </div>
   );
 }
