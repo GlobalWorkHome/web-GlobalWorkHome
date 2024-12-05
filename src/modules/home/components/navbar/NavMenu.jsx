@@ -15,6 +15,7 @@ export default function NavMenu() {
       >
         How we work
       </Link>
+      
     </nav>
   )
 }

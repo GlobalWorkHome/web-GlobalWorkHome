@@ -1,4 +1,5 @@
 
+import { LanguageSwitcher } from '@/modules/core/components/LanguageSwitcher'
 import { FaChevronDown } from 'react-icons/fa';
 
 export default function AuthButtons() {
@@ -33,8 +34,9 @@ export default function AuthButtons() {
 >
   Worker
 </button>
-
-
-    </div>
+<div className='z-10'>
+<LanguageSwitcher/>
+</div>
+</div>
   );
 }
