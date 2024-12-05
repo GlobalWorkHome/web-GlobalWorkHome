@@ -8,9 +8,9 @@ export default function Hero () {
   return (
     <div className="relative overflow-hidden bg-[url('/images/hombre.webp')] min-h-[700px] before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-r before:from-black/80 before:to-black/40">
 
-      <div className="flex items-center justify-center min-h-[700px] mx-auto px-4 relative z-10">
+      <div className="flex items-center min-h-[700px] mx-auto px-4 relative container z-10">
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-40 items-center min-w-96">
 
           {/* Left Column */}
           <div className="space-y-8">
@@ -49,8 +49,8 @@ export default function Hero () {
                 description="Lorem ipsum dolor sit amet consectetur adipiscing elit"
               />
             </div>
-            <div className="absolute -right-80 -bottom-8 hidden lg:block -z-10">
-              <div className="relative w-96 h-96 rounded-full overflow-hidden shadow-lg">
+            <div className="absolute -right-96 -bottom-14 hidden lg:block -z-10">
+              <div className="relative w-[450px] h-[450px] rounded-full overflow-hidden shadow-lg">
                 <Image
                   src="/images/Ellipse.svg"
                   alt="Handshake"
