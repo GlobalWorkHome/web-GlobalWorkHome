@@ -33,11 +33,11 @@ function OurCategories() {
     <section className="py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Our Categories</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 ">
           {categories.map((category, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg transition-all hover:bg-black hover:text-white"
+              className="bg-white p-6 rounded-lg transition-all shadow-lg hover:bg-black hover:text-white"
             >
               <div className="flex flex-col items-center text-center space-y-4">
               <FaPencilRuler className="h-8 w-8" />

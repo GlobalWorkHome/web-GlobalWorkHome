@@ -1,7 +1,7 @@
 
 "use client";
 import React from "react";
-import { FaBriefcase, FaPaintBrush, FaUserTie, FaCode, FaHeadset, FaDesktop } from "react-icons/fa";
+import { FaBriefcase, FaPaintBrush, FaUserTie, FaCode, FaHeadset, FaDesktop, FaServer, FaChartBar } from "react-icons/fa";
 
 function JobCard({ type, location, title, icon, department, salary, buttonText, index }) {
   // Array of brand colors for icons
@@ -12,6 +12,8 @@ function JobCard({ type, location, title, icon, department, salary, buttonText, 
     "bg-[#000000]", // Apple black
     "bg-[#25D366]", // WhatsApp green
     "bg-[#FF1493]", // Deep pink
+    "bg-[#1DB954]", // Spotify green
+    "bg-[#E60023]",
   ];
 
   return (
@@ -49,7 +51,7 @@ function OurJobs() {
       type: 'Full-time',
       location: 'Glendale, CA',
       title: 'Product Manager',
-      icon: <FaBriefcase className="w-5 h-5" />,
+      icon: <FaBriefcase className="w-5 h-5" />, 
       department: 'Marketing',
       salary: '$2,000 - $5,000 / Monthly',
       buttonText: 'Apply Now',
@@ -104,7 +106,28 @@ function OurJobs() {
       salary: '$2,000 - $5,000 / Monthly',
       buttonText: 'Apply Now',
     },
+    {
+      id: 7,
+      type: 'Full-time',
+      location: 'Newport, CA',
+      title: 'Data Analyst',
+      icon: <FaChartBar className="w-5 h-5" />,
+      department: 'Analytics',
+      salary: '$3,000 - $6,000 / Monthly',
+      buttonText: 'Apply Now',
+    },
+    {
+      id: 8,
+      type: 'Remote',
+      location: 'Remote',
+      title: 'DevOps Engineer',
+      icon: <FaServer className="w-5 h-5" />,
+      department: 'IT Infrastructure',
+      salary: '$4,000 - $7,000 / Monthly',
+      buttonText: 'Apply Now',
+    },
   ];
+
 
   return (
     <section className="container mx-auto py-16 px-4">
@@ -114,7 +137,7 @@ function OurJobs() {
           View All →
         </a>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {jobsData.map((job, index) => (
           <JobCard key={job.id} {...job} index={index} />
         ))}
