@@ -1,5 +1,6 @@
 {
     "WaitlistPage": {
+        "comingSoonMessage": "Pronto conectarás con tu trabajo ideal",
         "title": "Encuentra trabajos remotos",
         "subtitle": "Suscríbete para entrar en la lista de espera",
         "WaitListForm": {

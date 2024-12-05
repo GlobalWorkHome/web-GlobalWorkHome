@@ -20,9 +20,6 @@ export default function AuthButtons() {
         </div>
       </div>
       
-      {/* Static Text */}
-      <span className="text-sm text-gray-600">Employer?</span>
-      
       {/* Employer Button */}
       <button
         className="px-4 py-2 text-white bg-orange-500 rounded-md hover:bg-orange-600 focus:outline-none"

@@ -1,5 +1,6 @@
 {
     "WaitlistPage": {
+      "comingSoonMessage": "Soon you'll connect with your ideal job",
       "title": "Find Remote jobs",
       "subtitle": "Subscribe to enter the waitlist",
       "WaitListForm": {
