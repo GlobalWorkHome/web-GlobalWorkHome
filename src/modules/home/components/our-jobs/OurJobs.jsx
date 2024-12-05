@@ -133,7 +133,7 @@ function OurJobs() {
     <section className="container mx-auto py-16 px-4">
       <div className="flex justify-between items-center mb-12">
         <h2 className="text-3xl font-bold">Our Features Jobs</h2>
-        <a href="#" className="inline-flex items-center px-4 py-2 rounded-full bg-white text-black border border-gray-200 text-sm hover:bg-black hover:text-white transition-colors">
+        <a href="#" className="inline-flex items-center px-4 py-2 rounded-full bg-white text-black border border-gray-200 text-base hover:bg-black hover:text-white transition-colors">
           View All →
         </a>
       </div>
