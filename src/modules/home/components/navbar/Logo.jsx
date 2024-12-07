@@ -4,7 +4,7 @@ export default function Logo() {
   return (
     <Link href="/" className="flex items-center space-x-2">
     <Image
-    src="/images/logo.svg"
+    src="/images/logo-wh-grey.svg"
     alt='logo'
     width={150}
     height={150}

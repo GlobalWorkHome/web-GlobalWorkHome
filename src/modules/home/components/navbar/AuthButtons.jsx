@@ -34,7 +34,7 @@ export default function AuthButtons() {
 >
   Worker
 </button>
-<div className='z-10'>
+<div className='z-[99]'>
 <LanguageSwitcher/>
 </div>
 </div>
