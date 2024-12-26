@@ -67,5 +67,10 @@
           "feature4": "Featured company profile"
         }
       }
+    },
+    "ModalSuccessMessage": {
+      "title": "Congratulations!",
+      "subtitle": "You are officially on our waitlist. Exciting news will be coming your way soon.",
+      "button": "OK"
     }
   }

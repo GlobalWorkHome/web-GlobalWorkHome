@@ -1,20 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const InputFloatingLabel = ({ label, value, onChange, ...props }) => {
     const [isFocused, setIsFocused] = useState(false)
     const [hasValue, setHasValue] = useState(false)
 
     const handleFocus = () => setIsFocused(true)
+    
     const handleBlur = (e ) => {
         setIsFocused(false)
         setHasValue(e.target.value !== '')
     }
-    const handleChange = (e ) => {
-        setHasValue(e.target.value !== '')
-        if (props.onChange) {
-            props.onChange(e)
-        }
-    }
+
+    useEffect(()=>{
+        setHasValue(value.trim() !== '')
+    },[value])
 
     return (
         <div className="relative">
@@ -28,9 +27,9 @@ export const InputFloatingLabel = ({ label, value, onChange, ...props }) => {
                 {...props}
             />
             <label
-                className={`absolute left-3 -top-2.5 bg-white font-semibold rounded px-2 text-sm transition-all
-                    ${isFocused || hasValue
-                        ? 'text-yellow-600'
+                className={`absolute left-3 bg-white font-semibold rounded px-2 text-sm transition-all
+                    ${(isFocused || hasValue)
+                        ? 'text-yellow-600 -top-2.5'
                         : 'text-gray-500 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base'
                     }
                 `}

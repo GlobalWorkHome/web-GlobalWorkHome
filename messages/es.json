@@ -67,5 +67,10 @@
                 "feature4": "Perfil de empresa destacado"
             }
         }
+    },
+    "ModalSuccessMessage": {
+        "title": "¡En hora buena!",
+        "subtitle": "Estás oficialmente en nuestra lista de espera. Muy pronto recibirás noticias emocionantes.",
+        "button": "Aceptar"
     }
 }
