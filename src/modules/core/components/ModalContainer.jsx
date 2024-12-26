@@ -6,13 +6,13 @@ export const ModalContainer = ({ children, show, onClose }) => {
   useEffect(() => {
     const body = document.querySelector('body')
     if( show ){
-      body.classList.add('fixed-body')
+      body.classList.add('overflow-hidden')
     }else {
-      body.classList.remove('fixed-body')
+      body.classList.remove('overflow-hidden')
     }
 
   return () => {
-    body.classList.remove('fixed-body')
+    body.classList.remove('overflow-hidden')
   }
 }, [show])
 
@@ -27,7 +27,7 @@ export const ModalContainer = ({ children, show, onClose }) => {
         onClick={ onClose } 
         className="fixed inset-0 bg-black/50 z-40 animate-fade animate-duration-300">
       </div>
-      <div className="z-50 bg-white rounded p-1 animate-fade-down animate-duration-300">
+      <div className="z-50 bg-white rounded-md p-1 animate-fade-down animate-duration-300">
         { children }
       </div>
     </div>
