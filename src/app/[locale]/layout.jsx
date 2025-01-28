@@ -7,7 +7,7 @@ import { raleway, roboto } from "@/fonts";
 import "./globals.css";
 
 import { Waitlist } from "@/modules/waitlist/views/Waitlist";
-
+import Navbar from '@/modules/home/components/navbar/page';
 
 export const metadata = {
   title: "Global Work Home",
@@ -22,7 +22,6 @@ export default async function RootLayout({ children, params: { locale } }) {
   }
 
   const messages = await getMessages();
-
 
   // Para Mostrar la Waitlist, añadir en el archivo .env la variable SHOW_WAITLIST=true
   // Para Ocultar la Waitlist, quitar ó dejar sin valor en el archivo .env la variable SHOW_WAITLIST=
@@ -40,13 +39,13 @@ export default async function RootLayout({ children, params: { locale } }) {
     )
   }
 
-
   return (
     <html lang={locale}>
       <body
         className={`${raleway.variable} ${roboto.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
+          <Navbar />
           {children}
         </NextIntlClientProvider>
       </body>

@@ -5,7 +5,6 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
-    
   ],
   theme: {
     extend: {
@@ -16,7 +15,19 @@ module.exports = {
       fontFamily: {
         title: "var(--font-raleway)",
         content: "var(--font-roboto)",
-      }
+      },
+      opacity: {
+        '50': '0.5',
+      },
+      cursor: {
+        'not-allowed': 'not-allowed',
+      },
+    },
+  },
+  variants: {
+    extend: {
+      opacity: ['disabled'],
+      cursor: ['disabled'],
     },
   },
   plugins: [

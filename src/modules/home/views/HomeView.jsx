@@ -10,6 +10,7 @@ import Testimonials from '../components/testimonials/Testimonials'
 import FeaturedCompanies from '../components/featured-companies/FeaturedCompanies'
 import Cta from '../components/cta/Cta'
 import Footer from '../components/footer/Footer'
+import ScrollToTopButton from '../components/scroll-top-button/ScrollToTopButton'
 
 
 const HomeView = () => {
@@ -17,7 +18,6 @@ const HomeView = () => {
 
     <div>
         
-        <Navbar />
         <Hero />
         <OurJobs/>
         <OurCategories/>
@@ -28,6 +28,7 @@ const HomeView = () => {
         <FeaturedCompanies/>
         <Cta/>
         <Footer/>
+        <ScrollToTopButton/>
 
     </div>
   )

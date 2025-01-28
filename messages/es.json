@@ -1,72 +1,400 @@
 {
-    "WaitlistPage": {
-        "comingSoonMessage": "Pronto conectarás con tu trabajo ideal",
-        "title": "Encuentra trabajos remotos",
-        "subtitle": "Suscríbete para entrar en la lista de espera",
-        "WaitListForm": {
-            "name": {
-                "label": "Nombre",
-                "placeholder": "Ingresa tu nombre",
-                "error": "Ingresa tu nombre"
-            },
-            "email": {
-                "label": "Correo electrónico",
-                "placeholder": "Ingresa tu correo electrónico",
-                "error": "Ingresa tu correo electrónico",
-                "invalidError": "El correo electrónico no es válido"
-            },
-            "userRolSelect": {
-                "employee": "Profesional",
-                "company": "Empresa"
-            },
-            "role": {
-                "label": "¿Eres un profesional o una empresa?",
-                "placeholder": "¿Eres un profesional o una empresa?",
-                "error": "Por favor, selecciona una opción"
-            },
-            "submit": {
-                "label": "Suscribirse ahora",
-                "loading": "Suscribiendo..."
-            },
-            "termsAndConditions": {
-                "text": "Al hacer clic en suscribirse, aceptas nuestros Términos y Condiciones"
-            }
-        }
-    },
-    "PreSubscriptionBenefits": {
-        "title": "Beneficios de Preinscripción",
-        "subtitle": "Únete a nuestra lista de espera y obtén un 50% de descuento en todos nuestros planes",
-        "bestValue": "Mejor valor",
-        "discount": "50% de descuento",
-        "applied": "aplicado",
-        "callToAction": "¡No pierdas esta oportunidad! Regístrate ahora y asegura tu descuento.",
-        "plans": {
-            "2_ads": {
-                "name": "2 avisos",
-                "feature1": "Publicación de 2 ofertas de trabajo",
-                "feature2": "Visibilidad por 30 días",
-                "feature3": "Soporte por email"
-            },
-            "10_ads": {
-                "name": "10 avisos",
-                "feature1": "Publicación de 10 ofertas de trabajo",
-                "feature2": "Visibilidad por 60 días",
-                "feature3": "Soporte prioritario"
-            },
-            "monthly_unlimited": {
-                "name": "Mensual ilimitado",
-                "feature1": "Publicaciones ilimitadas",
-                "feature2": "Visibilidad permanente",
-                "feature3": "Soporte 24/7",
-                "feature4": "Destacados en búsquedas"
-            },
-            "annual_unlimited": {
-                "name": "Anual ilimitado",
-                "feature1": "Todo lo del plan mensual",
-                "feature2": "15 meses por el precio de 12",
-                "feature3": "Acceso a estadísticas avanzadas",
-                "feature4": "Perfil de empresa destacado"
-            }
-        }
+  "WaitlistPage": {
+    "comingSoonMessage": "Pronto conectarás con tu trabajo ideal",
+    "title": "Encuentra trabajos remotos",
+    "subtitle": "Suscríbete para entrar en la lista de espera",
+    "WaitListForm": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Ingresa tu nombre",
+        "error": "Ingresa tu nombre"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "Ingresa tu correo electrónico",
+        "error": "Ingresa tu correo electrónico",
+        "invalidError": "El correo electrónico no es válido"
+      },
+      "userRolSelect": {
+        "employee": "Profesional",
+        "company": "Empresa"
+      },
+      "role": {
+        "label": "¿Eres un profesional o una empresa?",
+        "placeholder": "¿Eres un profesional o una empresa?",
+        "error": "Por favor, selecciona una opción"
+      },
+      "submit": {
+        "label": "Suscribirse ahora",
+        "loading": "Suscribiendo..."
+      },
+      "termsAndConditions": {
+        "text": "Al hacer clic en suscribirse, aceptas nuestros Términos y Condiciones"
+      }
     }
+  },
+  "PreSubscriptionBenefits": {
+    "title": "Beneficios de Preinscripción",
+    "subtitle": "Únete a nuestra lista de espera y obtén un 50% de descuento en todos nuestros planes",
+    "bestValue": "Mejor valor",
+    "discount": "50% de descuento",
+    "applied": "aplicado",
+    "callToAction": "¡No pierdas esta oportunidad! Regístrate ahora y asegura tu descuento.",
+    "plans": {
+      "2_ads": {
+        "name": "2 avisos",
+        "feature1": "Publicación de 2 ofertas de trabajo",
+        "feature2": "Visibilidad por 30 días",
+        "feature3": "Soporte por email"
+      },
+      "10_ads": {
+        "name": "10 avisos",
+        "feature1": "Publicación de 10 ofertas de trabajo",
+        "feature2": "Visibilidad por 60 días",
+        "feature3": "Soporte prioritario"
+      },
+      "monthly_unlimited": {
+        "name": "Mensual ilimitado",
+        "feature1": "Publicaciones ilimitadas",
+        "feature2": "Visibilidad permanente",
+        "feature3": "Soporte 24/7",
+        "feature4": "Destacados en búsquedas"
+      },
+      "annual_unlimited": {
+        "name": "Anual ilimitado",
+        "feature1": "Todo lo del plan mensual",
+        "feature2": "15 meses por el precio de 12",
+        "feature3": "Acceso a estadísticas avanzadas",
+        "feature4": "Perfil de empresa destacado"
+      }
+    }
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "howWeWork": "Cómo trabajamos",
+    "login": "Iniciar sesión",
+    "employeeLogin": "Iniciar sesión como empleado",
+    "employerLogin": "Iniciar sesión como empleador",
+    "employer": "Empleador",
+    "worker": "Trabajador",
+    "hello": "Hola",
+    "applications": "Aplicaciones",
+    "logout": "Cerrar sesión"
+  },
+  "Hero": {
+    "title": "Encuentra trabajos remotos.",
+    "subtitle": "Todo en un solo lugar",
+    "description": "Escalar tu negocio acaba de volverse más fácil. Plataforma impulsada por IA para soluciones de TI remotas bajo demanda. Descubre el mejor talento para tu negocio sin complicaciones.",
+    "searchPlaceholder": "Título del trabajo, palabras clave...",
+    "searchButton": "Buscar trabajo",
+    "interviewCards": {
+      "resume": {
+        "title": "Currículum",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      },
+      "telephoneInterview": {
+        "title": "Entrevista telefónica",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      },
+      "videoInterview": {
+        "title": "Entrevista por videollamada",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      }
+    }
+  },
+  "OurJobs": {
+    "title": "Nuestros trabajos destacados",
+    "viewAll": "Ver todos →",
+    "applyNow": "Aplicar ahora"
+  },
+  "OurCategories": {
+    "title": "Nuestras categorías",
+    "viewAll": "Ver todas →",
+    "categories": {
+      "webDesign": "Diseño web",
+      "webDevelopment": "Desarrollo web",
+      "marketing": "Marketing",
+      "dataEntry": "Entrada de datos",
+      "softwareEngineer": "Ingeniero de software",
+      "graphicDesigner": "Diseñador gráfico"
+    }
+  },
+  "WhyChooseUs": {
+    "title": "¿Por qué elegirnos?",
+    "description": "Proporcionamos una plataforma confiable, eficiente y segura para ayudarte a encontrar el mejor trabajo o talento.",
+    "reasons": {
+      "wideJobSelection": {
+        "title": "Amplia selección de trabajos",
+        "description": "Explora trabajos de múltiples industrias y ubicaciones."
+      },
+      "trustedCompanies": {
+        "title": "Empresas confiables",
+        "description": "Trabaja con empleadores de renombre en todo el mundo."
+      },
+      "easyApplication": {
+        "title": "Aplicación fácil",
+        "description": "Aplica a trabajos sin problemas con solo unos clics."
+      }
+    }
+  },
+  "Statistics": {
+    "title": "Nuestro impacto en números",
+    "stats": {
+      "activeJobs": {
+        "number": "15k+",
+        "label": "Trabajos activos"
+      },
+      "companies": {
+        "number": "10k+",
+        "label": "Empresas"
+      },
+      "jobSeekers": {
+        "number": "25k+",
+        "label": "Buscadores de empleo"
+      },
+      "jobsFilled": {
+        "number": "8k+",
+        "label": "Trabajos cubiertos"
+      }
+    }
+  },
+  "HowItWorks": {
+    "title": "Cómo funciona",
+    "steps": {
+      "createProfile": {
+        "title": "Crea un perfil",
+        "description": "Regístrate y construye tu perfil profesional."
+      },
+      "searchJobs": {
+        "title": "Busca trabajos",
+        "description": "Usa filtros para encontrar trabajos que coincidan con tus habilidades."
+      },
+      "applyEasily": {
+        "title": "Aplica fácilmente",
+        "description": "Envía tu solicitud con un solo clic."
+      },
+      "getHired": {
+        "title": "Consigue el trabajo",
+        "description": "Conéctate con empresas y comienza tu viaje."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "Lo que dice la gente"
+  },
+  "FeaturedCompanies": {
+    "title": "Empresas destacadas"
+  },
+  "CTA": {
+    "title": "¿Listo para encontrar tu próxima oportunidad?",
+    "description": "Únete a miles de buscadores de empleo que han encontrado sus trabajos ideales a través de nuestra plataforma",
+    "postJob": "Publicar un trabajo",
+    "uploadResume": "Subir currículum"
+  },
+  "Footer": {
+    "aboutUs": {
+      "title": "Sobre nosotros",
+      "description": "Conectamos a profesionales talentosos con las mejores empresas de todo el mundo para oportunidades remotas y locales."
+    },
+    "quickLinks": {
+      "title": "Enlaces rápidos",
+      "findJobs": "Buscar trabajos",
+      "postJob": "Publicar trabajo",
+      "uploadResume": "Subir currículum"
+    },
+    "resources": {
+      "title": "Recursos",
+      "blog": "Blog",
+      "helpCenter": "Centro de ayuda",
+      "contactUs": "Contáctanos"
+    },
+    "followUs": {
+      "title": "Síguenos"
+    },
+    "copyright": "© {year} Global Work Home. Todos los derechos reservados."
+  },
+  "company": {
+    "dashboard": {
+      "title": "Panel de Control de la Empresa",
+      "totalJobs": "Total de Trabajos",
+      "activeApplications": "Aplicaciones Activas",
+      "totalViews": "Total de Vistas",
+      "quickActions": "Acciones Rápidas",
+      "postJob": "Publicar Trabajo",
+      "recentActivity": "Actividad Reciente",
+      "newApplication": "{applicant} aplicó para {job}",
+      "jobViews": "{job} recibió {count} vistas",
+      "newHire": "{applicant} fue contratado para {job}"
+    },
+    "jobs": {
+      "title": "Ofertas de Trabajo de la Empresa",
+      "jobsList": "Lista de Trabajos",
+      "post": "Publicar un Trabajo",
+      "jobTitle": "Título del Trabajo",
+      "jobDescription": "Descripción del Trabajo",
+      "requirements": "Requisitos",
+      "salary": "Salario",
+      "postButton": "Publicar Trabajo",
+      "fillAllFields": "Por favor, complete todos los campos.",
+      "jobPosted": "Trabajo publicado con éxito",
+      "status": {
+        "active": "Activo",
+        "closed": "Cerrado",
+        "draft": "Borrador"
+      },
+      "view": "Ver",
+      "applicants": "Solicitantes"
+    },
+    "jobDetails": {
+      "title": "Detalles del Trabajo",
+      "description": "Descripción del Trabajo",
+      "requirements": "Requisitos del Trabajo",
+      "salary": "Salario",
+      "applicants": "Solicitantes",
+      "viewDetails": "Ver Detalles",
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "status": {
+        "pending": "Pendiente",
+        "reviewing": "En Revisión",
+        "accepted": "Aceptado"
+      },
+      "actions": "Acciones"
+    },
+    "applicationReview": {
+      "title": "Revisión de Aplicación",
+      "loading": "Cargando detalles de la aplicación...",
+      "email": "Correo Electrónico",
+      "resume": "Currículum",
+      "viewResume": "Ver Currículum",
+      "coverLetter": "Carta de Presentación",
+      "status": {
+        "label": "Estado",
+        "placeholder": "Selecciona un estado",
+        "selectStatus": "Seleccionar Estado",
+        "pending": "Pendiente",
+        "reviewing": "En Revisión",
+        "accepted": "Aceptado",
+        "rejected": "Rechazado"
+      },
+      "notes": "Notas",
+      "notesPlaceholder": "Añade tus notas aquí...",
+      "saveNotes": "Guardar Notas"
+    },
+    "analytics": {
+      "title": "Análisis",
+      "jobPerformance": "Rendimiento del Trabajo",
+      "views": "Vistas",
+      "applications": "Aplicaciones",
+      "hires": "Contrataciones",
+      "applicantDemographics": "Demografía de Solicitantes",
+      "percentage": "Porcentaje"
+    },
+    "payments": {
+      "title": "Pagos de la Empresa",
+      "makePayment": "Realizar un Pago",
+      "amount": "Monto",
+      "payButton": "Pagar Ahora",
+      "history": "Historial de Pagos",
+      "date": "Fecha",
+      "status": {
+        "completed": "Completado",
+        "pending": "Pendiente",
+        "failed": "Fallido"
+      }
+    },
+    "profile": {
+      "title": "Perfil de la Empresa",
+      "updateProfile": "Actualizar Perfil",
+      "companyName": "Nombre de la Empresa",
+      "description": "Descripción",
+      "website": "Sitio Web",
+      "industry": "Industria",
+      "updateButton": "Actualizar Perfil",
+      "updateSuccess": "Perfil actualizado con éxito",
+      "updateError": "Error al actualizar el perfil"
+    },
+    "messaging": {
+      "title": "Mensajería",
+      "inbox": "Bandeja de Entrada",
+      "from": "De",
+      "subject": "Asunto",
+      "date": "Fecha",
+      "messageDetails": "Detalles del Mensaje",
+      "selectMessage": "Selecciona un mensaje para ver los detalles",
+      "replyPlaceholder": "Escribe tu respuesta aquí...",
+      "send": "Enviar",
+      "noMessageSelected": "Ningún mensaje seleccionado"
+    }
+  },
+  "common": {
+    "backToHome": "Volver al inicio",
+    "tryAgain": "Intentar de nuevo",
+    "loading": "Cargando...",
+    "error": "Error"
+  },
+  "error": {
+    "notFound": "Oops! Página no encontrada",
+    "serverError": "Oops! Algo salió mal en el servidor"
+  },
+  "nav": {
+    "home": "Inicio",
+    "jobs": "Empleos",
+    "companies": "Empresas",
+    "profile": "Perfil",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse"
+  },
+  "jobs": {
+    "search": "Buscar Empleos",
+    "create": "Crear Nueva Oferta de Empleo",
+    "edit": "Editar Oferta de Empleo",
+    "details": "Detalles del Empleo"
+  },
+  "applications1": {
+    "details": "Detalles de Aplicaciones",
+    "viewDetails": "Ver Detalles",
+    "columns": {
+      "jobTitle": "Título del Trabajo",
+      "company": "Empresa",
+      "applicationDate": "Fecha de Aplicación",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "applications": [
+      { "id": 1, "jobTitle": "Ingeniero de Software", "company": "Tech Co", "date": "2023-05-15", "status": "pendiente" },
+      { "id": 2, "jobTitle": "Gerente de Producto", "company": "Startup Inc", "date": "2023-05-10", "status": "entrevistado" },
+      { "id": 3, "jobTitle": "Analista de Datos", "company": "Big Data Ltd", "date": "2023-05-05", "status": "ofrecido" },
+      { "id": 4, "jobTitle": "Diseñador UX", "company": "Design Studio", "date": "2023-05-01", "status": "rechazado" },
+      { "id": 5, "jobTitle": "Desarrollador Backend", "company": "CodeBase", "date": "2023-04-25", "status": "pendiente" },
+      { "id": 6, "jobTitle": "Desarrollador Frontend", "company": "WebWorks", "date": "2023-04-20", "status": "entrevistado" },
+      { "id": 7, "jobTitle": "Ingeniero DevOps"},
+      { "id": 7, "jobTitle": "Ingeniero DevOps", "company": "CloudOps", "date": "2023-04-15", "status": "ofrecido" },
+      { "id": 8, "jobTitle": "Ingeniero QA", "company": "TestIt", "date": "2023-04-10", "status": "rechazado" },
+      { "id": 9, "jobTitle": "Gerente de Proyecto", "company": "ManageIt", "date": "2023-04-05", "status": "pendiente" },
+      { "id": 10, "jobTitle": "Administrador de Sistemas", "company": "SysAdmin Co", "date": "2023-04-01", "status": "entrevistado" }
+    ]
+  },
+  "auth": {
+    "login": "Iniciar sesión",
+    "register": "Registrarse",
+    "forgotPassword": "Olvidé mi contraseña",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "name": "Nombre",
+    "resetPassword": "Restablecer contraseña",
+    "noAccount": "¿No tienes una cuenta?",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "forgotPasswordPrompt": "¿Olvidaste tu contraseña?",
+    "remembered": "¿Recordaste tu contraseña?",
+    "reset": "Restablécela",
+    "back": "Volver",
+    "hello": "Hola",
+    "logout": "Cerrar sesión",
+    "placeholders": {
+      "email": "correo@ejemplo.com",
+      "password": "********",
+      "name": "Tu nombre completo"
+    }
+  }
 }

@@ -1,72 +1,399 @@
 {
-    "WaitlistPage": {
-      "comingSoonMessage": "Soon you'll connect with your ideal job",
-      "title": "Find Remote jobs",
-      "subtitle": "Subscribe to enter the waitlist",
-      "WaitListForm": {
-        "name": {
-          "label": "Name",
-          "placeholder": "Enter your name",
-          "error": "Enter your name"
-        },
-        "email": {
-          "label": "Email",
-          "placeholder": "Enter your email",
-          "error": "Enter your email",
-          "invalidError": "The email is not valid"
-        },
-        "userRolSelect": {
-                "employee": "Professional",
-                "company": "Company"
-            },
-        "role": {
-          "label": "Are you an professional or company?",
-          "placeholder": "Are you an professional or company?",
-          "error": "Please, select an option"
-        },
-        "submit": {
-          "label": "Subscribe now",
-          "loading": "Subscribing..."
-        },
-        "termsAndConditions": {
-          "text": "By clicking subscribe you agree to our Terms & Conditions"
-        }
-      }
-    },
-    "PreSubscriptionBenefits": {
-      "title": "Pre-subscription Benefits",
-      "subtitle": "Join our waitlist and get a 50% discount on all our plans",
-      "bestValue": "Best value",
-      "discount": "50% discount",
-      "applied": "applied",
-      "callToAction": "Don't miss this opportunity! Register now and secure your discount.",
-      "plans": {
-        "2_ads": {
-          "name": "2 ads",
-          "feature1": "Publication of 2 job offers",
-          "feature2": "Visibility for 30 days",
-          "feature3": "Email support"
-        },
-        "10_ads": {
-          "name": "10 ads",
-          "feature1": "Publication of 10 job offers",
-          "feature2": "Visibility for 60 days",
-          "feature3": "Priority support"
-        },
-        "monthly_unlimited": {
-          "name": "Monthly unlimited",
-          "feature1": "Unlimited publications",
-          "feature2": "Permanent visibility",
-          "feature3": "24/7 support",
-          "feature4": "Featured in searches"
-        },
-        "annual_unlimited": {
-          "name": "Annual unlimited",
-          "feature1": "Everything in the monthly plan",
-          "feature2": "15 months for the price of 12",
-          "feature3": "Access to advanced statistics",
-          "feature4": "Featured company profile"
-        }
+  "WaitlistPage": {
+    "comingSoonMessage": "Soon you will connect with your ideal job",
+    "title": "Find remote jobs",
+    "subtitle": "Subscribe to join the waitlist",
+    "WaitListForm": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Enter your name",
+        "error": "Enter your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email",
+        "error": "Enter your email",
+        "invalidError": "The email is not valid"
+      },
+      "userRolSelect": {
+        "employee": "Professional",
+        "company": "Company"
+      },
+      "role": {
+        "label": "Are you a professional or a company?",
+        "placeholder": "Are you a professional or a company?",
+        "error": "Please select an option"
+      },
+      "submit": {
+        "label": "Subscribe now",
+        "loading": "Subscribing..."
+      },
+      "termsAndConditions": {
+        "text": "By clicking subscribe, you agree to our Terms and Conditions"
       }
     }
+  },
+  "PreSubscriptionBenefits": {
+    "title": "Pre-Subscription Benefits",
+    "subtitle": "Join our waitlist and get 50% off all our plans",
+    "bestValue": "Best value",
+    "discount": "50% off",
+    "applied": "applied",
+    "callToAction": "Don't miss this opportunity! Sign up now and secure your discount.",
+    "plans": {
+      "2_ads": {
+        "name": "2 ads",
+        "feature1": "Posting 2 job offers",
+        "feature2": "Visibility for 30 days",
+        "feature3": "Email support"
+      },
+      "10_ads": {
+        "name": "10 ads",
+        "feature1": "Posting 10 job offers",
+        "feature2": "Visibility for 60 days",
+        "feature3": "Priority support"
+      },
+      "monthly_unlimited": {
+        "name": "Monthly unlimited",
+        "feature1": "Unlimited postings",
+        "feature2": "Permanent visibility",
+        "feature3": "24/7 support",
+        "feature4": "Featured in searches"
+      },
+      "annual_unlimited": {
+        "name": "Annual unlimited",
+        "feature1": "Everything in the monthly plan",
+        "feature2": "15 months for the price of 12",
+        "feature3": "Access to advanced statistics",
+        "feature4": "Featured company profile"
+      }
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "howWeWork": "How we work",
+    "login": "Login",
+    "employeeLogin": "Login as employee",
+    "employerLogin": "Login as employer",
+    "employer": "Employer",
+    "worker": "Worker",
+    "hello": "Hello",
+    "applications": "Applications",
+    "logout": "Logout"
+  },
+  "Hero": {
+    "title": "Find remote jobs.",
+    "subtitle": "All in one place",
+    "description": "Scaling your business just got easier. AI-powered platform for on-demand remote IT solutions. Discover the best talent for your business without hassle.",
+    "searchPlaceholder": "Job title, keywords...",
+    "searchButton": "Search job",
+    "interviewCards": {
+      "resume": {
+        "title": "Resume",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      },
+      "telephoneInterview": {
+        "title": "Telephone interview",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      },
+      "videoInterview": {
+        "title": "Video interview",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit"
+      }
+    }
+  },
+  "OurJobs": {
+    "title": "Our featured jobs",
+    "viewAll": "View all →",
+    "applyNow": "Apply now"
+  },
+  "OurCategories": {
+    "title": "Our categories",
+    "viewAll": "View all →",
+    "categories": {
+      "webDesign": "Web design",
+      "webDevelopment": "Web development",
+      "marketing": "Marketing",
+      "dataEntry": "Data entry",
+      "softwareEngineer": "Software engineer",
+      "graphicDesigner": "Graphic designer"
+    }
+  },
+  "WhyChooseUs": {
+    "title": "Why choose us?",
+    "description": "We provide a reliable, efficient, and secure platform to help you find the best job or talent.",
+    "reasons": {
+      "wideJobSelection": {
+        "title": "Wide job selection",
+        "description": "Explore jobs from multiple industries and locations."
+      },
+      "trustedCompanies": {
+        "title": "Trusted companies",
+        "description": "Work with renowned employers worldwide."
+      },
+      "easyApplication": {
+        "title": "Easy application",
+        "description": "Apply to jobs hassle-free with just a few clicks."
+      }
+    }
+  },
+  "Statistics": {
+    "title": "Our impact in numbers",
+    "stats": {
+      "activeJobs": {
+        "number": "15k+",
+        "label": "Active jobs"
+      },
+      "companies": {
+        "number": "10k+",
+        "label": "Companies"
+      },
+      "jobSeekers": {
+        "number": "25k+",
+        "label": "Job seekers"
+      },
+      "jobsFilled": {
+        "number": "8k+",
+        "label": "Jobs filled"
+      }
+    }
+  },
+  "HowItWorks": {
+    "title": "How it works",
+    "steps": {
+      "createProfile": {
+        "title": "Create a profile",
+        "description": "Sign up and build your professional profile."
+      },
+      "searchJobs": {
+        "title": "Search jobs",
+        "description": "Use filters to find jobs that match your skills."
+      },
+      "applyEasily": {
+        "title": "Apply easily",
+        "description": "Submit your application with just one click."
+      },
+      "getHired": {
+        "title": "Get hired",
+        "description": "Connect with companies and start your journey."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "What people say"
+  },
+  "FeaturedCompanies": {
+    "title": "Featured companies"
+  },
+  "CTA": {
+    "title": "Ready to find your next opportunity?",
+    "description": "Join thousands of job seekers who have found their ideal jobs through our platform",
+    "postJob": "Post a job",
+    "uploadResume": "Upload resume"
+  },
+  "Footer": {
+    "aboutUs": {
+      "title": "About us",
+      "description": "We connect talented professionals with the best companies worldwide for remote and local opportunities."
+    },
+    "quickLinks": {
+      "title": "Quick links",
+      "findJobs": "Find jobs",
+      "postJob": "Post job",
+      "uploadResume": "Upload resume"
+    },
+    "resources": {
+      "title": "Resources",
+      "blog": "Blog",
+      "helpCenter": "Help center",
+      "contactUs": "Contact us"
+    },
+    "followUs": {
+      "title": "Follow us"
+    },
+    "copyright": "© {year} Global Work Home. All rights reserved."
+  },
+  "company": {
+    "dashboard": {
+      "title": "Company Dashboard",
+      "totalJobs": "Total Jobs",
+      "activeApplications": "Active Applications",
+      "totalViews": "Total Views",
+      "quickActions": "Quick Actions",
+      "postJob": "Post Job",
+      "recentActivity": "Recent Activity",
+      "newApplication": "{applicant} applied for {job}",
+      "jobViews": "{job} received {count} views",
+      "newHire": "{applicant} was hired for {job}"
+    },
+    "jobs": {
+      "title": "Company Job Offers",
+      "jobsList": "Jobs List",
+      "post": "Post a Job",
+      "jobTitle": "Job Title",
+      "jobDescription": "Job Description",
+      "requirements": "Requirements",
+      "salary": "Salary",
+      "postButton": "Post Job",
+      "fillAllFields": "Please fill in all fields.",
+      "jobPosted": "Job posted successfully",
+      "status": {
+        "active": "Active",
+        "closed": "Closed",
+        "draft": "Draft"
+      },
+      "view": "View",
+      "applicants": "Applicants"
+    },
+    "jobDetails": {
+      "title": "Job Details",
+      "description": "Job Description",
+      "requirements": "Job Requirements",
+      "salary": "Salary",
+      "applicants": "Applicants",
+      "viewDetails": "View Details",
+      "name": "Name",
+      "email": "Email",
+      "status": {
+        "pending": "Pending",
+        "reviewing": "Reviewing",
+        "accepted": "Accepted"
+      },
+      "actions": "Actions"
+    },
+    "applicationReview": {
+      "title": "Application Review",
+      "loading": "Loading application details...",
+      "email": "Email",
+      "resume": "Resume",
+      "viewResume": "View Resume",
+      "coverLetter": "Cover Letter",
+      "status": {
+        "label": "Status",
+        "placeholder": "Select a status",
+        "selectStatus": "Select Status",
+        "pending": "Pending",
+        "reviewing": "Reviewing",
+        "accepted": "Accepted",
+        "rejected": "Rejected"
+      },
+      "notes": "Notes",
+      "notesPlaceholder": "Add your notes here...",
+      "saveNotes": "Save Notes"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "jobPerformance": "Job Performance",
+      "views": "Views",
+      "applications": "Applications",
+      "hires": "Hires",
+      "applicantDemographics": "Applicant Demographics",
+      "percentage": "Percentage"
+    },
+    "payments": {
+      "title": "Company Payments",
+      "makePayment": "Make a Payment",
+      "amount": "Amount",
+      "payButton": "Pay Now",
+      "history": "Payment History",
+      "date": "Date",
+      "status": {
+        "completed": "Completed",
+        "pending": "Pending",
+        "failed": "Failed"
+      }
+    },
+    "profile": {
+      "title": "Company Profile",
+      "updateProfile": "Update Profile",
+      "companyName": "Company Name",
+      "description": "Description",
+      "website": "Website",
+      "industry": "Industry",
+      "updateButton": "Update Profile",
+      "updateSuccess": "Profile updated successfully",
+      "updateError": "Error updating profile"
+    },
+    "messaging": {
+      "title": "Messaging",
+      "inbox": "Inbox",
+      "from": "From",
+      "subject": "Subject",
+      "date": "Date",
+      "messageDetails": "Message Details",
+      "selectMessage": "Select a message to view details",
+      "replyPlaceholder": "Type your reply here...",
+      "send": "Send",
+      "noMessageSelected": "No message selected"
+    }
+  },
+  "common": {
+    "backToHome": "Back to home",
+    "tryAgain": "Try again",
+    "loading": "Loading...",
+    "error": "Error"
+  },
+  "error": {
+    "notFound": "Oops! Page not found",
+    "serverError": "Oops! Something went wrong on the server"
+  },
+  "nav": {
+    "home": "Home",
+    "jobs": "Jobs",
+    "companies": "Companies",
+    "profile": "Profile",
+    "login": "Login",
+    "register": "Register"
+  },
+  "jobs": {
+    "search": "Search jobs",
+    "create": "Create new job offer",
+    "edit": "Edit job offer",
+    "details": "Job details"
+  },
+  "applications1": {
+    "details": "Application details",
+    "viewDetails": "View details",
+    "columns": {
+      "jobTitle": "Job title",
+      "company": "Company",
+      "applicationDate": "Application date",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "applications": [
+      { "id": 1, "jobTitle": "Software Engineer", "company": "Tech Co", "date": "2023-05-15", "status": "pending" },
+      { "id": 2, "jobTitle": "Product Manager", "company": "Startup Inc", "date": "2023-05-10", "status": "interviewed" },
+      { "id": 3, "jobTitle": "Data Analyst", "company": "Big Data Ltd", "date": "2023-05-05", "status": "offered" },
+      { "id": 4, "jobTitle": "UX Designer", "company": "Design Studio", "date": "2023-05-01", "status": "rejected" },
+      { "id": 5, "jobTitle": "Backend Developer", "company": "CodeBase", "date": "2023-04-25", "status": "pending" },
+      { "id": 6, "jobTitle": "Frontend Developer", "company": "WebWorks", "date": "2023-04-20", "status": "interviewed" },
+      { "id": 7, "jobTitle": "DevOps Engineer", "company": "CloudOps", "date": "2023-04-15", "status": "offered" },
+      { "id": 8, "jobTitle": "QA Engineer", "company": "TestIt", "date": "2023-04-10", "status": "rejected" },
+      { "id": 9, "jobTitle": "Project Manager", "company": "ManageIt", "date": "2023-04-05", "status": "pending" },
+      { "id": 10, "jobTitle": "System Administrator", "company": "SysAdmin Co", "date": "2023-04-01", "status": "interviewed" }
+    ]
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "forgotPassword": "Forgot Password",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "resetPassword": "Reset Password",
+    "noAccount": "Don't have an account?",
+    "haveAccount": "Already have an account?",
+    "forgotPasswordPrompt": "Forgot your password?",
+    "remembered": "Remembered your password?",
+    "reset": "Reset it",
+    "back": "Back",
+    "hello": "Hello",
+    "logout": "Logout",
+    "placeholders": {
+      "email": "email@example.com",
+      "password": "********",
+      "name": "Your full name"
+    }
   }
+}
